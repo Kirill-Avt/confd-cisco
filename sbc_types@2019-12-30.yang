@@ -1,0 +1,39 @@
+module sbc_types {
+    namespace "http://spacebridge.com/yang/sbc_types";
+    prefix "st";
+    yang-version 1;
+    import ietf-inet-types { prefix inet; }
+
+    revision 2019-12-30 {
+        description "Initial revision";
+    }
+
+    typedef ipv4-or-empty {
+        type union {
+            type inet:ipv4-address-no-zone;
+            type string { pattern ""; }
+        }
+    }
+    
+    typedef link_status_enum {
+        type enumeration {
+            enum "Up";
+            enum "Down";
+        }
+    }
+
+    typedef link_speed_enum {
+        type enumeration {
+            enum "10Mbps";
+            enum "100Mbps";
+            enum "1000Mbps";
+        }
+    }
+
+    typedef link_duplex_enum {
+        type enumeration {
+            enum "Full";
+            enum "Half";
+        }
+    }
+}
