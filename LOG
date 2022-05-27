@@ -250,8 +250,8 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
 [ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:702 (parse_config_platform_dev_row_part) ] attempt to parse a platform DEV row part: 'yang_id=port1'
 [ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:723 (parse_config_platform_dev_row_part) ] dev row element, key: 'yang_id', val: 'port1'
 [ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:86 (dump_platforms) ] Platforms: (count: 1)
-[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:64 (dump_platform) ] Platform: 'VirtualBox' (0x55c78b3ad658) (pci_rows: 2, dev_rows: 2)
-[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:26 (dump_platform_pci_row) ] platform PCI row dump (0x55c78b3ad668)
+[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:64 (dump_platform) ] Platform: 'VirtualBox' (0x55b97e4fe658) (pci_rows: 2, dev_rows: 2)
+[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:26 (dump_platform_pci_row) ] platform PCI row dump (0x55b97e4fe668)
   pci_id_str:          '0000:00:08.0'
   pci_class_id_str:    '0x0200'
   pci_vendor_id_str:   '0x8086'
@@ -259,7 +259,7 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
   kernel_driver_str:   '1000e'
   user_driver_str:     'igb_uio'
   pci_bind_str:        '0'
-[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:26 (dump_platform_pci_row) ] platform PCI row dump (0x55c78b3ad6a0)
+[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:26 (dump_platform_pci_row) ] platform PCI row dump (0x55b97e4fe6a0)
   pci_id_str:          '0000:00:09.0'
   pci_class_id_str:    '0x0200'
   pci_vendor_id_str:   '0x8086'
@@ -267,10 +267,10 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
   kernel_driver_str:   '1000e'
   user_driver_str:     'igb_uio'
   pci_bind_str:        '0'
-[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:49 (dump_platform_dev_row) ] platform DEV row dump (0x55c78b3add70)
+[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:49 (dump_platform_dev_row) ] platform DEV row dump (0x55b97e4fed70)
   object_id_str:       '/example_l2/port0'
   yang_id_str:         'port0'
-[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:49 (dump_platform_dev_row) ] platform DEV row dump (0x55c78b3add80)
+[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:49 (dump_platform_dev_row) ] platform DEV row dump (0x55b97e4fed80)
   object_id_str:       '/example_l2/port1'
   yang_id_str:         'port1'
 [ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:1144 (match_platform_pci_row) ] platform: 'VirtualBox', PCI ID: '0000:00:08.0' matched
@@ -280,8 +280,8 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
 [ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:1197 (match_platform_pci_row) ] platform: 'VirtualBox', device: '/sys/bus/pci/devices/0000:00:09.0/vendor', PCI vendor ID '0x8086' matched
 [ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:1253 (match_platform_pci_row) ] platform: 'VirtualBox', device: '/sys/bus/pci/devices/0000:00:09.0/device', PCI device ID '0x100f' matched
 [ INFO /example_l2/hal - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:1388 (match_config_table) ] USING platform: 'VirtualBox'
-[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:64 (dump_platform) ] Platform: 'VirtualBox' (0x55c78b3ad658) (pci_rows: 2, dev_rows: 2)
-[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:26 (dump_platform_pci_row) ] platform PCI row dump (0x55c78b3ad668)
+[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:64 (dump_platform) ] Platform: 'VirtualBox' (0x55b97e4fe658) (pci_rows: 2, dev_rows: 2)
+[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:26 (dump_platform_pci_row) ] platform PCI row dump (0x55b97e4fe668)
   pci_id_str:          '0000:00:08.0'
   pci_class_id_str:    '0x0200'
   pci_vendor_id_str:   '0x8086'
@@ -289,7 +289,7 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
   kernel_driver_str:   '1000e'
   user_driver_str:     'igb_uio'
   pci_bind_str:        '0'
-[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:26 (dump_platform_pci_row) ] platform PCI row dump (0x55c78b3ad6a0)
+[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:26 (dump_platform_pci_row) ] platform PCI row dump (0x55b97e4fe6a0)
   pci_id_str:          '0000:00:09.0'
   pci_class_id_str:    '0x0200'
   pci_vendor_id_str:   '0x8086'
@@ -297,10 +297,10 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
   kernel_driver_str:   '1000e'
   user_driver_str:     'igb_uio'
   pci_bind_str:        '0'
-[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:49 (dump_platform_dev_row) ] platform DEV row dump (0x55c78b3add70)
+[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:49 (dump_platform_dev_row) ] platform DEV row dump (0x55b97e4fed70)
   object_id_str:       '/example_l2/port0'
   yang_id_str:         'port0'
-[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:49 (dump_platform_dev_row) ] platform DEV row dump (0x55c78b3add80)
+[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:49 (dump_platform_dev_row) ] platform DEV row dump (0x55b97e4fed80)
   object_id_str:       '/example_l2/port1'
   yang_id_str:         'port1'
 [ INFO - - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_dpdk_eal_impl_class.c:131 (sb_class_dpdk_eal_object_configure) ] init EAL, args: '-c 0x7 --proc-type=primary --vdev=net_tap0 --vdev=net_tap1', rte_lcore_id(): '-1'
