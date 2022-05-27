@@ -25,7 +25,7 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
 [ INFO - - (-) ] [ /sources/dataplane-sdk-project/build//main.c:213 (main) ] daemon ver. '0.7.7' has been started
 [ INFO - - (-) ] [ /sources/dataplane-sdk-project/build//main.c:143 (startup_config_dump) ] Startup config:
   foreground:      '1'
-  debug_level:     '99'
+  debug_level:     '100'
 [ INFO - - (-) ] [ /sources/dataplane-sdk-project/build//init.c:18 (do_init) ] ***** object allocation *****
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '2' (SB_CLASS_ID_EXAMPLE_L2), id: '/example_l2'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_class.c:164 (sb_class_init) ] init class ID: '2' (SB_CLASS_ID_EXAMPLE_L2)
@@ -33,23 +33,51 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_example_l2_impl_class.c:121 (sb_class_example_l2_object_create) ] sb_object_alloc, ID: '/example_l2'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build/sb_class_impl_object.h:184 (_sb_object_super_class_init) ] parent_id: '1' (SB_CLASS_ID_ABSTRACT)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '1' (SB_CLASS_ID_ABSTRACT), id: '/example_l2'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2'
+  class: 'sb_class'
+
 [ INFO /example_l2 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_example_l2.c:170 (object_create) ] ***** objects allocation *****
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '6' (SB_CLASS_ID_HAL), id: '/example_l2/hal'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_class.c:164 (sb_class_init) ] init class ID: '6' (SB_CLASS_ID_HAL)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:1686 (sb_class_hal_object_create) ] sb_object_alloc, ID: '/example_l2/hal'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build/sb_class_impl_object.h:184 (_sb_object_super_class_init) ] parent_id: '1' (SB_CLASS_ID_ABSTRACT)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '1' (SB_CLASS_ID_ABSTRACT), id: '/example_l2/hal'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/hal'
+  class: 'sb_class'
+
 [ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:1703 (sb_class_hal_object_create) ] HAL has been initialized successfully
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/hal'
+  class: 'sb_class.hal'
+
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '3' (SB_CLASS_ID_DPDK_EAL), id: '/example_l2/rte_eal'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_class.c:164 (sb_class_init) ] init class ID: '3' (SB_CLASS_ID_DPDK_EAL)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_dpdk_eal_impl_class.c:186 (sb_class_dpdk_eal_object_create) ] sb_object_alloc, ID: '/example_l2/rte_eal'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build/sb_class_impl_object.h:184 (_sb_object_super_class_init) ] parent_id: '1' (SB_CLASS_ID_ABSTRACT)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '1' (SB_CLASS_ID_ABSTRACT), id: '/example_l2/rte_eal'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/rte_eal'
+  class: 'sb_class'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/rte_eal'
+  class: 'sb_class.dpdk.eal'
+
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '8' (SB_CLASS_ID_DPDK_MEMPOOL), id: '/example_l2/mempool0'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_class.c:164 (sb_class_init) ] init class ID: '8' (SB_CLASS_ID_DPDK_MEMPOOL)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_dpdk_mempool_impl_class.c:261 (sb_class_dpdk_mempool_object_create) ] sb_object_alloc, ID: '/example_l2/mempool0'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build/sb_class_impl_object.h:184 (_sb_object_super_class_init) ] parent_id: '1' (SB_CLASS_ID_ABSTRACT)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '1' (SB_CLASS_ID_ABSTRACT), id: '/example_l2/mempool0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/mempool0'
+  class: 'sb_class'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/mempool0'
+  class: 'sb_class.dpdk.mempool'
+
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '20' (SB_CLASS_ID_EXAMPLE_L2_TASK_API_CONFD), id: '/example_l2/api_confd'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_class.c:164 (sb_class_init) ] init class ID: '20' (SB_CLASS_ID_EXAMPLE_L2_TASK_API_CONFD)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_class.c:164 (sb_class_init) ] init class ID: '19' (SB_CLASS_ID_TASK_API_CONFD)
@@ -64,6 +92,26 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '4' (SB_CLASS_ID_TASK), id: '/example_l2/api_confd'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build/sb_class_impl_object.h:184 (_sb_object_super_class_init) ] parent_id: '1' (SB_CLASS_ID_ABSTRACT)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '1' (SB_CLASS_ID_ABSTRACT), id: '/example_l2/api_confd'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/api_confd'
+  class: 'sb_class'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/api_confd'
+  class: 'sb_class.task'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/api_confd'
+  class: 'sb_class.task.api'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/api_confd'
+  class: 'sb_class.task.api.confd'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/api_confd'
+  class: 'sb_class.example.l2.task.api.confd'
+
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '10' (SB_CLASS_ID_NETDEV_DPDK_ETH), id: '/example_l2/port0'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_class.c:164 (sb_class_init) ] init class ID: '10' (SB_CLASS_ID_NETDEV_DPDK_ETH)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_class.c:164 (sb_class_init) ] init class ID: '9' (SB_CLASS_ID_NETDEV_DPDK)
@@ -76,9 +124,25 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
 [ DEBUG 10 /example_l2/port0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_netdev_impl_class.c:318 (sb_class_netdev_object_create) ] '/example_l2/port0', call sb_object_super_class_init
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build/sb_class_impl_object.h:184 (_sb_object_super_class_init) ] parent_id: '1' (SB_CLASS_ID_ABSTRACT)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '1' (SB_CLASS_ID_ABSTRACT), id: '/example_l2/port0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port0'
+  class: 'sb_class'
+
 [ DEBUG 10 /example_l2/port0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_netdev_impl_class.c:332 (sb_class_netdev_object_create) ] netdev: '/example_l2/port0' has been allocated successfully
-[ DEBUG 10 /example_l2/port0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_netdev_dpdk_impl_class.c:5234 (sb_class_netdev_dpdk_object_create) ] dpdk port has been created successfully
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port0'
+  class: 'sb_class.netdev'
+
+[ DEBUG 10 /example_l2/port0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_netdev_dpdk_impl_class.c:5235 (sb_class_netdev_dpdk_object_create) ] dpdk port has been created successfully
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port0'
+  class: 'sb_class.netdev.dpdk'
+
 [ DEBUG 10 /example_l2/port0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_netdev_dpdk_eth_impl_class.c:878 (sb_class_netdev_dpdk_eth_object_create) ] dpdk eth port has been allocated successfully
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port0'
+  class: 'sb_class.netdev.dpdk.eth'
+
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '10' (SB_CLASS_ID_NETDEV_DPDK_ETH), id: '/example_l2/port1'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_netdev_dpdk_eth_impl_class.c:859 (sb_class_netdev_dpdk_eth_object_create) ] sb_object_alloc, ID: '/example_l2/port1'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build/sb_class_impl_object.h:184 (_sb_object_super_class_init) ] parent_id: '9' (SB_CLASS_ID_NETDEV_DPDK)
@@ -88,9 +152,25 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
 [ DEBUG 10 /example_l2/port1 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_netdev_impl_class.c:318 (sb_class_netdev_object_create) ] '/example_l2/port1', call sb_object_super_class_init
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build/sb_class_impl_object.h:184 (_sb_object_super_class_init) ] parent_id: '1' (SB_CLASS_ID_ABSTRACT)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '1' (SB_CLASS_ID_ABSTRACT), id: '/example_l2/port1'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port1'
+  class: 'sb_class'
+
 [ DEBUG 10 /example_l2/port1 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_netdev_impl_class.c:332 (sb_class_netdev_object_create) ] netdev: '/example_l2/port1' has been allocated successfully
-[ DEBUG 10 /example_l2/port1 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_netdev_dpdk_impl_class.c:5234 (sb_class_netdev_dpdk_object_create) ] dpdk port has been created successfully
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port1'
+  class: 'sb_class.netdev'
+
+[ DEBUG 10 /example_l2/port1 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_netdev_dpdk_impl_class.c:5235 (sb_class_netdev_dpdk_object_create) ] dpdk port has been created successfully
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port1'
+  class: 'sb_class.netdev.dpdk'
+
 [ DEBUG 10 /example_l2/port1 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_netdev_dpdk_eth_impl_class.c:878 (sb_class_netdev_dpdk_eth_object_create) ] dpdk eth port has been allocated successfully
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port1'
+  class: 'sb_class.netdev.dpdk.eth'
+
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '14' (SB_CLASS_ID_TASK_NODE_QUEUE_TX), id: '/example_l2/port0_queue_tx0'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_class.c:164 (sb_class_init) ] init class ID: '14' (SB_CLASS_ID_TASK_NODE_QUEUE_TX)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_class.c:164 (sb_class_init) ] init class ID: '13' (SB_CLASS_ID_TASK_NODE_QUEUE)
@@ -107,8 +187,31 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '4' (SB_CLASS_ID_TASK), id: '/example_l2/port0_queue_tx0'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build/sb_class_impl_object.h:184 (_sb_object_super_class_init) ] parent_id: '1' (SB_CLASS_ID_ABSTRACT)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '1' (SB_CLASS_ID_ABSTRACT), id: '/example_l2/port0_queue_tx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port0_queue_tx0'
+  class: 'sb_class'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port0_queue_tx0'
+  class: 'sb_class.task'
+
 [ DEBUG 10 /example_l2/port0_queue_tx0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node_impl_class.c:446 (sb_class_task_node_object_create) ] a node: '/example_l2/port0_queue_tx0' has been initialized successfully
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port0_queue_tx0'
+  class: 'sb_class.task.node'
+
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node_queue_impl_class.c:167 (sb_class_task_node_queue_object_create) ] a node: '/example_l2/port0_queue_tx0' has been initialized successfully
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port0_queue_tx0'
+  class: 'sb_class.task.node.queue'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node_queue_tx_impl_class.c:244 (sb_class_task_node_queue_tx_object_create) ] a node: '/example_l2/port0_queue_tx0' has been initialized successfully:
+ task tick time:   '0' (ns)
+ netdev_queue_id:  '0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port0_queue_tx0'
+  class: 'sb_class.task.node.queue.tx'
+
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '15' (SB_CLASS_ID_TASK_NODE_QUEUE_RX), id: '/example_l2/port0_queue_rx0'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_class.c:164 (sb_class_init) ] init class ID: '15' (SB_CLASS_ID_TASK_NODE_QUEUE_RX)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node_queue_rx_impl_class.c:256 (sb_class_task_node_queue_rx_object_create) ] sb_object_alloc, ID: '/example_l2/port0_queue_rx0'
@@ -123,11 +226,31 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '4' (SB_CLASS_ID_TASK), id: '/example_l2/port0_queue_rx0'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build/sb_class_impl_object.h:184 (_sb_object_super_class_init) ] parent_id: '1' (SB_CLASS_ID_ABSTRACT)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '1' (SB_CLASS_ID_ABSTRACT), id: '/example_l2/port0_queue_rx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port0_queue_rx0'
+  class: 'sb_class'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port0_queue_rx0'
+  class: 'sb_class.task'
+
 [ DEBUG 10 /example_l2/port0_queue_rx0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node_impl_class.c:446 (sb_class_task_node_object_create) ] a node: '/example_l2/port0_queue_rx0' has been initialized successfully
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port0_queue_rx0'
+  class: 'sb_class.task.node'
+
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node_queue_impl_class.c:167 (sb_class_task_node_queue_object_create) ] a node: '/example_l2/port0_queue_rx0' has been initialized successfully
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port0_queue_rx0'
+  class: 'sb_class.task.node.queue'
+
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node_queue_rx_impl_class.c:277 (sb_class_task_node_queue_rx_object_create) ] a node: '/example_l2/port0_queue_rx0' has been initialized successfully:
  tick time:        '0' (ns)
  netdev_queue_id:  '0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port0_queue_rx0'
+  class: 'sb_class.task.node.queue.rx'
+
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '15' (SB_CLASS_ID_TASK_NODE_QUEUE_RX), id: '/example_l2/port1_queue_rx0'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node_queue_rx_impl_class.c:256 (sb_class_task_node_queue_rx_object_create) ] sb_object_alloc, ID: '/example_l2/port1_queue_rx0'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node_queue_rx_impl_class.c:265 (sb_class_task_node_queue_rx_object_create) ] '/example_l2/port1_queue_rx0', call sb_object_super_class_init
@@ -141,11 +264,31 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '4' (SB_CLASS_ID_TASK), id: '/example_l2/port1_queue_rx0'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build/sb_class_impl_object.h:184 (_sb_object_super_class_init) ] parent_id: '1' (SB_CLASS_ID_ABSTRACT)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '1' (SB_CLASS_ID_ABSTRACT), id: '/example_l2/port1_queue_rx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port1_queue_rx0'
+  class: 'sb_class'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port1_queue_rx0'
+  class: 'sb_class.task'
+
 [ DEBUG 10 /example_l2/port1_queue_rx0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node_impl_class.c:446 (sb_class_task_node_object_create) ] a node: '/example_l2/port1_queue_rx0' has been initialized successfully
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port1_queue_rx0'
+  class: 'sb_class.task.node'
+
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node_queue_impl_class.c:167 (sb_class_task_node_queue_object_create) ] a node: '/example_l2/port1_queue_rx0' has been initialized successfully
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port1_queue_rx0'
+  class: 'sb_class.task.node.queue'
+
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node_queue_rx_impl_class.c:277 (sb_class_task_node_queue_rx_object_create) ] a node: '/example_l2/port1_queue_rx0' has been initialized successfully:
  tick time:        '0' (ns)
  netdev_queue_id:  '0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port1_queue_rx0'
+  class: 'sb_class.task.node.queue.rx'
+
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '14' (SB_CLASS_ID_TASK_NODE_QUEUE_TX), id: '/example_l2/port1_queue_tx0'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node_queue_tx_impl_class.c:223 (sb_class_task_node_queue_tx_object_create) ] sb_object_alloc, ID: '/example_l2/port1_queue_tx0'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node_queue_tx_impl_class.c:232 (sb_class_task_node_queue_tx_object_create) ] '/example_l2/port1_queue_tx0', call sb_object_super_class_init
@@ -159,8 +302,31 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '4' (SB_CLASS_ID_TASK), id: '/example_l2/port1_queue_tx0'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build/sb_class_impl_object.h:184 (_sb_object_super_class_init) ] parent_id: '1' (SB_CLASS_ID_ABSTRACT)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '1' (SB_CLASS_ID_ABSTRACT), id: '/example_l2/port1_queue_tx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port1_queue_tx0'
+  class: 'sb_class'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port1_queue_tx0'
+  class: 'sb_class.task'
+
 [ DEBUG 10 /example_l2/port1_queue_tx0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node_impl_class.c:446 (sb_class_task_node_object_create) ] a node: '/example_l2/port1_queue_tx0' has been initialized successfully
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port1_queue_tx0'
+  class: 'sb_class.task.node'
+
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node_queue_impl_class.c:167 (sb_class_task_node_queue_object_create) ] a node: '/example_l2/port1_queue_tx0' has been initialized successfully
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port1_queue_tx0'
+  class: 'sb_class.task.node.queue'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node_queue_tx_impl_class.c:244 (sb_class_task_node_queue_tx_object_create) ] a node: '/example_l2/port1_queue_tx0' has been initialized successfully:
+ task tick time:   '0' (ns)
+ netdev_queue_id:  '0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/port1_queue_tx0'
+  class: 'sb_class.task.node.queue.tx'
+
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '24' (SB_CLASS_ID_EXAMPLE_L2_TASK_MGMT), id: '/example_l2/mgmt0'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_class.c:164 (sb_class_init) ] init class ID: '24' (SB_CLASS_ID_EXAMPLE_L2_TASK_MGMT)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_example_l2_task_mgmt_impl_class.c:1016 (sb_class_example_l2_task_mgmt_object_create) ] sb_object_alloc, ID: '/example_l2/mgmt0'
@@ -168,6 +334,18 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '4' (SB_CLASS_ID_TASK), id: '/example_l2/mgmt0'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build/sb_class_impl_object.h:184 (_sb_object_super_class_init) ] parent_id: '1' (SB_CLASS_ID_ABSTRACT)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '1' (SB_CLASS_ID_ABSTRACT), id: '/example_l2/mgmt0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/mgmt0'
+  class: 'sb_class'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/mgmt0'
+  class: 'sb_class.task'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/mgmt0'
+  class: 'sb_class.example.l2.task.mgmt'
+
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '21' (SB_CLASS_ID_EXAMPLE_L2_TASK_DUMMY), id: '/example_l2/dummy0'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_class.c:164 (sb_class_init) ] init class ID: '21' (SB_CLASS_ID_EXAMPLE_L2_TASK_DUMMY)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_example_l2_task_dummy_impl_class.c:176 (sb_class_example_l2_task_dummy_object_create) ] sb_object_alloc, ID: '/example_l2/dummy0'
@@ -175,6 +353,18 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '4' (SB_CLASS_ID_TASK), id: '/example_l2/dummy0'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build/sb_class_impl_object.h:184 (_sb_object_super_class_init) ] parent_id: '1' (SB_CLASS_ID_ABSTRACT)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '1' (SB_CLASS_ID_ABSTRACT), id: '/example_l2/dummy0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/dummy0'
+  class: 'sb_class'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/dummy0'
+  class: 'sb_class.task'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/dummy0'
+  class: 'sb_class.example.l2.task.dummy'
+
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '18' (SB_CLASS_ID_LCORE_SCHEDULER_ROUNDROBIN), id: '/example_l2/lcore2'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_class.c:164 (sb_class_init) ] init class ID: '18' (SB_CLASS_ID_LCORE_SCHEDULER_ROUNDROBIN)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_class.c:164 (sb_class_init) ] init class ID: '17' (SB_CLASS_ID_LCORE_SCHEDULER)
@@ -186,6 +376,22 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '16' (SB_CLASS_ID_LCORE), id: '/example_l2/lcore2'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.h:184 (_sb_object_super_class_init) ] parent_id: '1' (SB_CLASS_ID_ABSTRACT)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '1' (SB_CLASS_ID_ABSTRACT), id: '/example_l2/lcore2'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/lcore2'
+  class: 'sb_class'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/lcore2'
+  class: 'sb_class.lcore'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/lcore2'
+  class: 'sb_class.lcore.scheduler'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/lcore2'
+  class: 'sb_class.lcore.scheduler.roundrobin'
+
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '18' (SB_CLASS_ID_LCORE_SCHEDULER_ROUNDROBIN), id: '/example_l2/lcore1'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_lcore_scheduler_roundrobin_impl_class.c:271 (sb_class_lcore_scheduler_roundrobin_object_create) ] sb_object_alloc, ID: '/example_l2/lcore1'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.h:184 (_sb_object_super_class_init) ] parent_id: '17' (SB_CLASS_ID_LCORE_SCHEDULER)
@@ -194,6 +400,22 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '16' (SB_CLASS_ID_LCORE), id: '/example_l2/lcore1'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.h:184 (_sb_object_super_class_init) ] parent_id: '1' (SB_CLASS_ID_ABSTRACT)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '1' (SB_CLASS_ID_ABSTRACT), id: '/example_l2/lcore1'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/lcore1'
+  class: 'sb_class'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/lcore1'
+  class: 'sb_class.lcore'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/lcore1'
+  class: 'sb_class.lcore.scheduler'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/lcore1'
+  class: 'sb_class.lcore.scheduler.roundrobin'
+
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '18' (SB_CLASS_ID_LCORE_SCHEDULER_ROUNDROBIN), id: '/example_l2/lcore0'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_lcore_scheduler_roundrobin_impl_class.c:271 (sb_class_lcore_scheduler_roundrobin_object_create) ] sb_object_alloc, ID: '/example_l2/lcore0'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.h:184 (_sb_object_super_class_init) ] parent_id: '17' (SB_CLASS_ID_LCORE_SCHEDULER)
@@ -202,9 +424,41 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '16' (SB_CLASS_ID_LCORE), id: '/example_l2/lcore0'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.h:184 (_sb_object_super_class_init) ] parent_id: '1' (SB_CLASS_ID_ABSTRACT)
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:258 (_sb_object_create_by_class) ] creating an object: class ID: '1' (SB_CLASS_ID_ABSTRACT), id: '/example_l2/lcore0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/lcore0'
+  class: 'sb_class'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/lcore0'
+  class: 'sb_class.lcore'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/lcore0'
+  class: 'sb_class.lcore.scheduler'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2/lcore0'
+  class: 'sb_class.lcore.scheduler.roundrobin'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:312 (_sb_object_create_by_class) ] a new object created:
+  ID:    '/example_l2'
+  class: 'sb_class.example_l2'
+
 [ INFO - - (-) ] [ /sources/dataplane-sdk-project/build//init.c:39 (do_init) ] ***** object configuration *****
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:393 (_sb_object_configure_with_arg_line) ] configuring an object, class_name: 'sb_class.example_l2', a_args: ''
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:123 (_sb_object_configure_with_argc_argv) ] configuring an object:
+  ID:    '/example_l2'
+  class: 'sb_class.example_l2'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:190 (sb_object_super_class_configure) ] class: '2' (SB_CLASS_ID_EXAMPLE_L2), parent class: '1' (SB_CLASS_ID_ABSTRACT)
 [ INFO - - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_example_l2.c:588 (object_configure) ] ***** objects searching *****
 [ INFO /example_l2 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_example_l2.c:802 (object_configure) ] ***** objects configuration *****
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:393 (_sb_object_configure_with_arg_line) ] configuring an object, class_name: 'sb_class.hal', a_args: '--_config_table="VirtualBox&&pci_id=0000:00:08.0,pci_class_id=0x0200,pci_vendor_id=0x8086,pci_device_id=0x100e,kernel_driver=1000e,user_driver=igb_uio,pci_bind=0;pci_id=0000:00:09.0,pci_class_id=0x0200,pci_vendor_id=0x8086,pci_device_id=0x100f,kernel_driver=1000e,user_driver=igb_uio,pci_bind=0&object_id=/example_l2/port0,yang_id=port0;object_id=/example_l2/port1,yang_id=port1"'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:123 (_sb_object_configure_with_argc_argv) ] configuring an object:
+  ID:    '/example_l2/hal'
+  class: 'sb_class.hal'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:190 (sb_object_super_class_configure) ] class: '6' (SB_CLASS_ID_HAL), parent class: '1' (SB_CLASS_ID_ABSTRACT)
 [ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:1070 (parse_config_table) ] attempt to parse config: 'VirtualBox&&pci_id=0000:00:08.0,pci_class_id=0x0200,pci_vendor_id=0x8086,pci_device_id=0x100e,kernel_driver=1000e,user_driver=igb_uio,pci_bind=0;pci_id=0000:00:09.0,pci_class_id=0x0200,pci_vendor_id=0x8086,pci_device_id=0x100f,kernel_driver=1000e,user_driver=igb_uio,pci_bind=0&object_id=/example_l2/port0,yang_id=port0;object_id=/example_l2/port1,yang_id=port1'
 [ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:959 (parse_config_platform) ] attempt to parse platform: 'VirtualBox&&pci_id=0000:00:08.0,pci_class_id=0x0200,pci_vendor_id=0x8086,pci_device_id=0x100e,kernel_driver=1000e,user_driver=igb_uio,pci_bind=0;pci_id=0000:00:09.0,pci_class_id=0x0200,pci_vendor_id=0x8086,pci_device_id=0x100f,kernel_driver=1000e,user_driver=igb_uio,pci_bind=0&object_id=/example_l2/port0,yang_id=port0;object_id=/example_l2/port1,yang_id=port1'
 [ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:837 (parse_config_platform_pci_rows) ] attempt to parse platform PCI rows: 'pci_id=0000:00:08.0,pci_class_id=0x0200,pci_vendor_id=0x8086,pci_device_id=0x100e,kernel_driver=1000e,user_driver=igb_uio,pci_bind=0;pci_id=0000:00:09.0,pci_class_id=0x0200,pci_vendor_id=0x8086,pci_device_id=0x100f,kernel_driver=1000e,user_driver=igb_uio,pci_bind=0'
@@ -250,8 +504,8 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
 [ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:702 (parse_config_platform_dev_row_part) ] attempt to parse a platform DEV row part: 'yang_id=port1'
 [ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:723 (parse_config_platform_dev_row_part) ] dev row element, key: 'yang_id', val: 'port1'
 [ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:86 (dump_platforms) ] Platforms: (count: 1)
-[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:64 (dump_platform) ] Platform: 'VirtualBox' (0x55b97e4fe658) (pci_rows: 2, dev_rows: 2)
-[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:26 (dump_platform_pci_row) ] platform PCI row dump (0x55b97e4fe668)
+[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:64 (dump_platform) ] Platform: 'VirtualBox' (0x55c391d20658) (pci_rows: 2, dev_rows: 2)
+[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:26 (dump_platform_pci_row) ] platform PCI row dump (0x55c391d20668)
   pci_id_str:          '0000:00:08.0'
   pci_class_id_str:    '0x0200'
   pci_vendor_id_str:   '0x8086'
@@ -259,7 +513,7 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
   kernel_driver_str:   '1000e'
   user_driver_str:     'igb_uio'
   pci_bind_str:        '0'
-[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:26 (dump_platform_pci_row) ] platform PCI row dump (0x55b97e4fe6a0)
+[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:26 (dump_platform_pci_row) ] platform PCI row dump (0x55c391d206a0)
   pci_id_str:          '0000:00:09.0'
   pci_class_id_str:    '0x0200'
   pci_vendor_id_str:   '0x8086'
@@ -267,10 +521,10 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
   kernel_driver_str:   '1000e'
   user_driver_str:     'igb_uio'
   pci_bind_str:        '0'
-[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:49 (dump_platform_dev_row) ] platform DEV row dump (0x55b97e4fed70)
+[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:49 (dump_platform_dev_row) ] platform DEV row dump (0x55c391d20d70)
   object_id_str:       '/example_l2/port0'
   yang_id_str:         'port0'
-[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:49 (dump_platform_dev_row) ] platform DEV row dump (0x55b97e4fed80)
+[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:49 (dump_platform_dev_row) ] platform DEV row dump (0x55c391d20d80)
   object_id_str:       '/example_l2/port1'
   yang_id_str:         'port1'
 [ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:1144 (match_platform_pci_row) ] platform: 'VirtualBox', PCI ID: '0000:00:08.0' matched
@@ -280,8 +534,8 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
 [ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:1197 (match_platform_pci_row) ] platform: 'VirtualBox', device: '/sys/bus/pci/devices/0000:00:09.0/vendor', PCI vendor ID '0x8086' matched
 [ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:1253 (match_platform_pci_row) ] platform: 'VirtualBox', device: '/sys/bus/pci/devices/0000:00:09.0/device', PCI device ID '0x100f' matched
 [ INFO /example_l2/hal - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:1388 (match_config_table) ] USING platform: 'VirtualBox'
-[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:64 (dump_platform) ] Platform: 'VirtualBox' (0x55b97e4fe658) (pci_rows: 2, dev_rows: 2)
-[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:26 (dump_platform_pci_row) ] platform PCI row dump (0x55b97e4fe668)
+[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:64 (dump_platform) ] Platform: 'VirtualBox' (0x55c391d20658) (pci_rows: 2, dev_rows: 2)
+[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:26 (dump_platform_pci_row) ] platform PCI row dump (0x55c391d20668)
   pci_id_str:          '0000:00:08.0'
   pci_class_id_str:    '0x0200'
   pci_vendor_id_str:   '0x8086'
@@ -289,7 +543,7 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
   kernel_driver_str:   '1000e'
   user_driver_str:     'igb_uio'
   pci_bind_str:        '0'
-[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:26 (dump_platform_pci_row) ] platform PCI row dump (0x55b97e4fe6a0)
+[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:26 (dump_platform_pci_row) ] platform PCI row dump (0x55c391d206a0)
   pci_id_str:          '0000:00:09.0'
   pci_class_id_str:    '0x0200'
   pci_vendor_id_str:   '0x8086'
@@ -297,12 +551,18 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
   kernel_driver_str:   '1000e'
   user_driver_str:     'igb_uio'
   pci_bind_str:        '0'
-[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:49 (dump_platform_dev_row) ] platform DEV row dump (0x55b97e4fed70)
+[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:49 (dump_platform_dev_row) ] platform DEV row dump (0x55c391d20d70)
   object_id_str:       '/example_l2/port0'
   yang_id_str:         'port0'
-[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:49 (dump_platform_dev_row) ] platform DEV row dump (0x55b97e4fed80)
+[ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:49 (dump_platform_dev_row) ] platform DEV row dump (0x55c391d20d80)
   object_id_str:       '/example_l2/port1'
   yang_id_str:         'port1'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:393 (_sb_object_configure_with_arg_line) ] configuring an object, class_name: 'sb_class.dpdk.eal', a_args: '--eal_cmd_line="-c 0x7 --proc-type=primary --vdev=net_tap0 --vdev=net_tap1"'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:123 (_sb_object_configure_with_argc_argv) ] configuring an object:
+  ID:    '/example_l2/rte_eal'
+  class: 'sb_class.dpdk.eal'
+
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:190 (sb_object_super_class_configure) ] class: '3' (SB_CLASS_ID_DPDK_EAL), parent class: '1' (SB_CLASS_ID_ABSTRACT)
 [ INFO - - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_dpdk_eal_impl_class.c:131 (sb_class_dpdk_eal_object_configure) ] init EAL, args: '-c 0x7 --proc-type=primary --vdev=net_tap0 --vdev=net_tap1', rte_lcore_id(): '-1'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_dpdk_eal_impl_class.c:140 (sb_class_dpdk_eal_object_configure) ] EAL argv[0]: 'example_l2'
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_dpdk_eal_impl_class.c:140 (sb_class_dpdk_eal_object_configure) ] EAL argv[1]: '-c'
@@ -315,41 +575,212 @@ sb_module_init /sources/dataplane-sdk-project/build//sb_class_utils_packets_swit
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_lcore_impl_class.c:316 (sb_lcores_stop) ]   object: '/example_l2/lcore1' (SB_CLASS_ID_LCORE_SCHEDULER_ROUNDROBIN) call _sb_lcore_stop
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_lcore_impl_class.c:316 (sb_lcores_stop) ]   object: '/example_l2/lcore0' (SB_CLASS_ID_LCORE_SCHEDULER_ROUNDROBIN) call _sb_lcore_stop
 [ DEBUG 10 /example_l2 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.example_l2
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2', a_obj->_object_id: '/example_l2'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:595 (sb_object_free) ] cur_obj->_object_id: '/example_l2' (SB_CLASS_ID_EXAMPLE_L2), call object_free
 [ INFO - - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_example_l2.c:1151 (object_free) ] ***** objects free *****
 [ DEBUG 10 /example_l2/lcore0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.lcore.scheduler.roundrobin
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/hal', a_obj->_object_id: '/example_l2/lcore0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/rte_eal', a_obj->_object_id: '/example_l2/lcore0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/mempool0', a_obj->_object_id: '/example_l2/lcore0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/api_confd', a_obj->_object_id: '/example_l2/lcore0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0', a_obj->_object_id: '/example_l2/lcore0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1', a_obj->_object_id: '/example_l2/lcore0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0_queue_tx0', a_obj->_object_id: '/example_l2/lcore0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0_queue_rx0', a_obj->_object_id: '/example_l2/lcore0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1_queue_rx0', a_obj->_object_id: '/example_l2/lcore0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1_queue_tx0', a_obj->_object_id: '/example_l2/lcore0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/mgmt0', a_obj->_object_id: '/example_l2/lcore0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/dummy0', a_obj->_object_id: '/example_l2/lcore0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/lcore2', a_obj->_object_id: '/example_l2/lcore0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/lcore1', a_obj->_object_id: '/example_l2/lcore0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/lcore0', a_obj->_object_id: '/example_l2/lcore0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:595 (sb_object_free) ] cur_obj->_object_id: '/example_l2/lcore0' (SB_CLASS_ID_LCORE_SCHEDULER_ROUNDROBIN), call object_free
 [ DEBUG 10 /example_l2/lcore2 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.lcore.scheduler.roundrobin
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/hal', a_obj->_object_id: '/example_l2/lcore2'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/rte_eal', a_obj->_object_id: '/example_l2/lcore2'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/mempool0', a_obj->_object_id: '/example_l2/lcore2'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/api_confd', a_obj->_object_id: '/example_l2/lcore2'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0', a_obj->_object_id: '/example_l2/lcore2'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1', a_obj->_object_id: '/example_l2/lcore2'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0_queue_tx0', a_obj->_object_id: '/example_l2/lcore2'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0_queue_rx0', a_obj->_object_id: '/example_l2/lcore2'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1_queue_rx0', a_obj->_object_id: '/example_l2/lcore2'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1_queue_tx0', a_obj->_object_id: '/example_l2/lcore2'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/mgmt0', a_obj->_object_id: '/example_l2/lcore2'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/dummy0', a_obj->_object_id: '/example_l2/lcore2'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/lcore2', a_obj->_object_id: '/example_l2/lcore2'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:595 (sb_object_free) ] cur_obj->_object_id: '/example_l2/lcore2' (SB_CLASS_ID_LCORE_SCHEDULER_ROUNDROBIN), call object_free
 [ DEBUG 10 /example_l2/lcore1 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.lcore.scheduler.roundrobin
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/hal', a_obj->_object_id: '/example_l2/lcore1'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/rte_eal', a_obj->_object_id: '/example_l2/lcore1'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/mempool0', a_obj->_object_id: '/example_l2/lcore1'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/api_confd', a_obj->_object_id: '/example_l2/lcore1'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0', a_obj->_object_id: '/example_l2/lcore1'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1', a_obj->_object_id: '/example_l2/lcore1'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0_queue_tx0', a_obj->_object_id: '/example_l2/lcore1'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0_queue_rx0', a_obj->_object_id: '/example_l2/lcore1'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1_queue_rx0', a_obj->_object_id: '/example_l2/lcore1'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1_queue_tx0', a_obj->_object_id: '/example_l2/lcore1'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/mgmt0', a_obj->_object_id: '/example_l2/lcore1'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/dummy0', a_obj->_object_id: '/example_l2/lcore1'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/lcore1', a_obj->_object_id: '/example_l2/lcore1'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:595 (sb_object_free) ] cur_obj->_object_id: '/example_l2/lcore1' (SB_CLASS_ID_LCORE_SCHEDULER_ROUNDROBIN), call object_free
 [ DEBUG 10 /example_l2/mgmt0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.example.l2.task.mgmt
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/hal', a_obj->_object_id: '/example_l2/mgmt0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/rte_eal', a_obj->_object_id: '/example_l2/mgmt0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/mempool0', a_obj->_object_id: '/example_l2/mgmt0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/api_confd', a_obj->_object_id: '/example_l2/mgmt0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0', a_obj->_object_id: '/example_l2/mgmt0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1', a_obj->_object_id: '/example_l2/mgmt0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0_queue_tx0', a_obj->_object_id: '/example_l2/mgmt0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0_queue_rx0', a_obj->_object_id: '/example_l2/mgmt0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1_queue_rx0', a_obj->_object_id: '/example_l2/mgmt0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1_queue_tx0', a_obj->_object_id: '/example_l2/mgmt0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/mgmt0', a_obj->_object_id: '/example_l2/mgmt0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:595 (sb_object_free) ] cur_obj->_object_id: '/example_l2/mgmt0' (SB_CLASS_ID_EXAMPLE_L2_TASK_MGMT), call object_free
 [ DEBUG 10 /example_l2/dummy0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.example.l2.task.dummy
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/hal', a_obj->_object_id: '/example_l2/dummy0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/rte_eal', a_obj->_object_id: '/example_l2/dummy0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/mempool0', a_obj->_object_id: '/example_l2/dummy0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/api_confd', a_obj->_object_id: '/example_l2/dummy0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0', a_obj->_object_id: '/example_l2/dummy0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1', a_obj->_object_id: '/example_l2/dummy0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0_queue_tx0', a_obj->_object_id: '/example_l2/dummy0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0_queue_rx0', a_obj->_object_id: '/example_l2/dummy0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1_queue_rx0', a_obj->_object_id: '/example_l2/dummy0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1_queue_tx0', a_obj->_object_id: '/example_l2/dummy0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/dummy0', a_obj->_object_id: '/example_l2/dummy0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:595 (sb_object_free) ] cur_obj->_object_id: '/example_l2/dummy0' (SB_CLASS_ID_EXAMPLE_L2_TASK_DUMMY), call object_free
 [ DEBUG 10 /example_l2/port0_queue_tx0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.task.node.queue.tx
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/hal', a_obj->_object_id: '/example_l2/port0_queue_tx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/rte_eal', a_obj->_object_id: '/example_l2/port0_queue_tx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/mempool0', a_obj->_object_id: '/example_l2/port0_queue_tx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/api_confd', a_obj->_object_id: '/example_l2/port0_queue_tx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0', a_obj->_object_id: '/example_l2/port0_queue_tx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1', a_obj->_object_id: '/example_l2/port0_queue_tx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0_queue_tx0', a_obj->_object_id: '/example_l2/port0_queue_tx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:595 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0_queue_tx0' (SB_CLASS_ID_TASK_NODE_QUEUE_TX), call object_free
 [ DEBUG 10 /example_l2/port0_queue_rx0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.task.node.queue.rx
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/hal', a_obj->_object_id: '/example_l2/port0_queue_rx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/rte_eal', a_obj->_object_id: '/example_l2/port0_queue_rx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/mempool0', a_obj->_object_id: '/example_l2/port0_queue_rx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/api_confd', a_obj->_object_id: '/example_l2/port0_queue_rx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0', a_obj->_object_id: '/example_l2/port0_queue_rx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1', a_obj->_object_id: '/example_l2/port0_queue_rx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0_queue_rx0', a_obj->_object_id: '/example_l2/port0_queue_rx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:595 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0_queue_rx0' (SB_CLASS_ID_TASK_NODE_QUEUE_RX), call object_free
 [ DEBUG 10 /example_l2/port1_queue_rx0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.task.node.queue.rx
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/hal', a_obj->_object_id: '/example_l2/port1_queue_rx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/rte_eal', a_obj->_object_id: '/example_l2/port1_queue_rx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/mempool0', a_obj->_object_id: '/example_l2/port1_queue_rx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/api_confd', a_obj->_object_id: '/example_l2/port1_queue_rx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0', a_obj->_object_id: '/example_l2/port1_queue_rx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1', a_obj->_object_id: '/example_l2/port1_queue_rx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1_queue_rx0', a_obj->_object_id: '/example_l2/port1_queue_rx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:595 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1_queue_rx0' (SB_CLASS_ID_TASK_NODE_QUEUE_RX), call object_free
 [ DEBUG 10 /example_l2/port1_queue_tx0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.task.node.queue.tx
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/hal', a_obj->_object_id: '/example_l2/port1_queue_tx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/rte_eal', a_obj->_object_id: '/example_l2/port1_queue_tx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/mempool0', a_obj->_object_id: '/example_l2/port1_queue_tx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/api_confd', a_obj->_object_id: '/example_l2/port1_queue_tx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0', a_obj->_object_id: '/example_l2/port1_queue_tx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1', a_obj->_object_id: '/example_l2/port1_queue_tx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1_queue_tx0', a_obj->_object_id: '/example_l2/port1_queue_tx0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:595 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1_queue_tx0' (SB_CLASS_ID_TASK_NODE_QUEUE_TX), call object_free
 [ DEBUG 10 /example_l2/port0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.netdev.dpdk.eth
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/hal', a_obj->_object_id: '/example_l2/port0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/rte_eal', a_obj->_object_id: '/example_l2/port0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/mempool0', a_obj->_object_id: '/example_l2/port0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/api_confd', a_obj->_object_id: '/example_l2/port0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0', a_obj->_object_id: '/example_l2/port0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:595 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port0' (SB_CLASS_ID_NETDEV_DPDK_ETH), call object_free
 [ DEBUG 10 (null) (-) ] [ /sources/dataplane-sdk-project/build//sb_class_netdev_dpdk_impl_class.c:546 (sb_class_netdev_dpdk_set_enabled) ] dev '(null)' set enabled: '0' port id: '0'
+[ INFO (null) - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_netdev_dpdk_impl_class.c:594 (sb_class_netdev_dpdk_set_enabled) ] Port 0 set disabled
 [ DEBUG 10 /example_l2/port1 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.netdev.dpdk.eth
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/hal', a_obj->_object_id: '/example_l2/port1'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/rte_eal', a_obj->_object_id: '/example_l2/port1'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/mempool0', a_obj->_object_id: '/example_l2/port1'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/api_confd', a_obj->_object_id: '/example_l2/port1'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1', a_obj->_object_id: '/example_l2/port1'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:595 (sb_object_free) ] cur_obj->_object_id: '/example_l2/port1' (SB_CLASS_ID_NETDEV_DPDK_ETH), call object_free
 [ DEBUG 10 (null) (-) ] [ /sources/dataplane-sdk-project/build//sb_class_netdev_dpdk_impl_class.c:546 (sb_class_netdev_dpdk_set_enabled) ] dev '(null)' set enabled: '0' port id: '0'
+[ INFO (null) - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_netdev_dpdk_impl_class.c:594 (sb_class_netdev_dpdk_set_enabled) ] Port 0 set disabled
 [ DEBUG 10 /example_l2/mempool0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.dpdk.mempool
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/hal', a_obj->_object_id: '/example_l2/mempool0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/rte_eal', a_obj->_object_id: '/example_l2/mempool0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/mempool0', a_obj->_object_id: '/example_l2/mempool0'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:595 (sb_object_free) ] cur_obj->_object_id: '/example_l2/mempool0' (SB_CLASS_ID_DPDK_MEMPOOL), call object_free
+[ DEBUG 100 /example_l2/mempool0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_dpdk_mempool_impl_class.c:26 (sb_class_dpdk_mempool_object_free) ] object_free
 [ DEBUG 10 /example_l2/api_confd (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.example.l2.task.api.confd
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/hal', a_obj->_object_id: '/example_l2/api_confd'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/rte_eal', a_obj->_object_id: '/example_l2/api_confd'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/api_confd', a_obj->_object_id: '/example_l2/api_confd'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:595 (sb_object_free) ] cur_obj->_object_id: '/example_l2/api_confd' (SB_CLASS_ID_EXAMPLE_L2_TASK_API_CONFD), call object_free
 [ DEBUG 10 /example_l2/rte_eal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.dpdk.eal
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/hal', a_obj->_object_id: '/example_l2/rte_eal'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/rte_eal', a_obj->_object_id: '/example_l2/rte_eal'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:595 (sb_object_free) ] cur_obj->_object_id: '/example_l2/rte_eal' (SB_CLASS_ID_DPDK_EAL), call object_free
 [ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.hal
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/hal', a_obj->_object_id: '/example_l2/hal'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:595 (sb_object_free) ] cur_obj->_object_id: '/example_l2/hal' (SB_CLASS_ID_HAL), call object_free
 [ INFO - - (-) ] [ /sources/dataplane-sdk-project/build//main.c:362 (main) ] Delete the lock file: '/var/run/lock/example_l2.lock'
 [ INFO - - (-) ] [ /sources/dataplane-sdk-project/build//main.c:375 (main) ] finished
-sb_class.lcore.scheduler.roundrobin
-[ DEBUG 10 /example_l2/lcore2 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.lcore.scheduler.roundrobin
-[ DEBUG 10 /example_l2/lcore1 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.lcore.scheduler.roundrobin
-[ DEBUG 10 /example_l2/mgmt0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.example.l2.task.mgmt
-[ DEBUG 10 /example_l2/dummy0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.example.l2.task.dummy
-[ DEBUG 10 /example_l2/port0_queue_tx0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.task.node.queue.tx
-[ DEBUG 10 /example_l2/port0_queue_rx0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.task.node.queue.rx
-[ DEBUG 10 /example_l2/port1_queue_rx0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.task.node.queue.rx
-[ DEBUG 10 /example_l2/port1_queue_tx0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.task.node.queue.tx
-[ DEBUG 10 /example_l2/port0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.netdev.dpdk.eth
-[ DEBUG 10 (null) (-) ] [ /sources/dataplane-sdk-project/build//sb_class_netdev_dpdk_impl_class.c:546 (sb_class_netdev_dpdk_set_enabled) ] dev '(null)' set enabled: '0' port id: '0'
-[ DEBUG 10 /example_l2/port1 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.netdev.dpdk.eth
-[ DEBUG 10 (null) (-) ] [ /sources/dataplane-sdk-project/build//sb_class_netdev_dpdk_impl_class.c:546 (sb_class_netdev_dpdk_set_enabled) ] dev '(null)' set enabled: '0' port id: '0'
-[ DEBUG 10 /example_l2/mempool0 (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.dpdk.mempool
-[ DEBUG 10 /example_l2/api_confd (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.example.l2.task.api.confd
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_utils_packets_switch.c:145 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_utils_packets_copy.c:145 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node_queue_tx.c:144 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node_queue_rx.c:144 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node_queue.c:132 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node.c:132 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_api_confd.c:296 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_api.c:328 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task.c:137 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_netdev_dpdk_eth.c:192 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_netdev_dpdk.c:431 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_netdev.c:294 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_lcore_scheduler_roundrobin.c:152 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_lcore_scheduler.c:137 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_lcore.c:161 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_huge_pages.c:121 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal.c:139 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_example_l2_task_mgmt.c:125 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_example_l2_task_dummy.c:144 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_example_l2_task_api_confd.c:216 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_example_l2.c:1352 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_dpdk_mempool.c:126 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_dpdk_eal.c:111 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class.c:127 (sb_module_fini) ] sb_module_fini
+ect/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/rte_eal', a_obj->_object_id: '/example_l2/api_confd'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/api_confd', a_obj->_object_id: '/example_l2/api_confd'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:595 (sb_object_free) ] cur_obj->_object_id: '/example_l2/api_confd' (SB_CLASS_ID_EXAMPLE_L2_TASK_API_CONFD), call object_free
 [ DEBUG 10 /example_l2/rte_eal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.dpdk.eal
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/hal', a_obj->_object_id: '/example_l2/rte_eal'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/rte_eal', a_obj->_object_id: '/example_l2/rte_eal'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:595 (sb_object_free) ] cur_obj->_object_id: '/example_l2/rte_eal' (SB_CLASS_ID_DPDK_EAL), call object_free
 [ DEBUG 10 /example_l2/hal (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:568 (sb_object_free) ] sb_object_free, class: sb_class.hal
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:582 (sb_object_free) ] cur_obj->_object_id: '/example_l2/hal', a_obj->_object_id: '/example_l2/hal'
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_impl_object.c:595 (sb_object_free) ] cur_obj->_object_id: '/example_l2/hal' (SB_CLASS_ID_HAL), call object_free
 [ DEBUG 10 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal_impl_class.c:430 (unbind_platform) ] first child pid: 0
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_utils_packets_switch.c:145 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_utils_packets_copy.c:145 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node_queue_tx.c:144 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node_queue_rx.c:144 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node_queue.c:132 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_node.c:132 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_api_confd.c:296 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task_api.c:328 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_task.c:137 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_netdev_dpdk_eth.c:192 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_netdev_dpdk.c:431 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_netdev.c:294 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_lcore_scheduler_roundrobin.c:152 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_lcore_scheduler.c:137 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_lcore.c:161 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_huge_pages.c:121 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_hal.c:139 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_example_l2_task_mgmt.c:125 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_example_l2_task_dummy.c:144 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_example_l2_task_api_confd.c:216 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_example_l2.c:1352 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_dpdk_mempool.c:126 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class_dpdk_eal.c:111 (sb_module_fini) ] sb_module_fini
+[ DEBUG 100 - (-) ] [ /sources/dataplane-sdk-project/build//sb_class.c:127 (sb_module_fini) ] sb_module_fini
