@@ -255,8 +255,8 @@ sb_module_init /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dat
 [ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:977 (parse_config_platform_port_map_part) ] attempt to parse a platform port map part: 'file_content='
 [ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:998 (parse_config_platform_port_map_part) ] port map element, key: 'file_content', val: '(null)'
 [ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:90 (dump_platforms) ] Platforms: (count: 1)
-[ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:64 (dump_platform) ] Platform: 'VirtualBox' (0x5564dc344708) (pci_rows: 2, dev_rows: 2), port_map.file_path: '(null)', port_map.file_content: '(null)'
-[ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:26 (dump_platform_pci_row) ] platform PCI row dump (0x5564dc344718)
+[ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:64 (dump_platform) ] Platform: 'VirtualBox' (0x55bd7556d708) (pci_rows: 2, dev_rows: 2), port_map.file_path: '(null)', port_map.file_content: '(null)'
+[ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:26 (dump_platform_pci_row) ] platform PCI row dump (0x55bd7556d718)
   pci_id_str:          '0000:00:08.0'
   pci_class_id_str:    '0x0200'
   pci_vendor_id_str:   '0x1af4'
@@ -264,7 +264,7 @@ sb_module_init /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dat
   kernel_driver_str:   'virtio_pci'
   user_driver_str:     'igb_uio'
   pci_bind_str:        '0'
-[ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:26 (dump_platform_pci_row) ] platform PCI row dump (0x5564dc344750)
+[ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:26 (dump_platform_pci_row) ] platform PCI row dump (0x55bd7556d750)
   pci_id_str:          '0000:00:09.0'
   pci_class_id_str:    '0x0200'
   pci_vendor_id_str:   '0x1af4'
@@ -272,10 +272,10 @@ sb_module_init /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dat
   kernel_driver_str:   'virtio_pci'
   user_driver_str:     'igb_uio'
   pci_bind_str:        '0'
-[ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:49 (dump_platform_dev_row) ] platform DEV row dump (0x5564dc344e20)
+[ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:49 (dump_platform_dev_row) ] platform DEV row dump (0x55bd7556de20)
   object_id_str:       '/example_l2/port2'
   yang_id_str:         'port2'
-[ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:49 (dump_platform_dev_row) ] platform DEV row dump (0x5564dc344e30)
+[ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:49 (dump_platform_dev_row) ] platform DEV row dump (0x55bd7556de30)
   object_id_str:       '/example_l2/port1'
   yang_id_str:         'port1'
 [ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:1325 (match_platform_pci_row) ] platform: 'VirtualBox', PCI ID: '0000:00:08.0' matched
@@ -285,8 +285,8 @@ sb_module_init /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dat
 [ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:1378 (match_platform_pci_row) ] platform: 'VirtualBox', device: '/sys/bus/pci/devices/0000:00:09.0/vendor', PCI vendor ID '0x1af4' matched
 [ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:1434 (match_platform_pci_row) ] platform: 'VirtualBox', device: '/sys/bus/pci/devices/0000:00:09.0/device', PCI device ID '0x1000' matched
 [ INFO /example_l2/hal - (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:1622 (match_config_table) ] USING platform: 'VirtualBox'
-[ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:64 (dump_platform) ] Platform: 'VirtualBox' (0x5564dc344708) (pci_rows: 2, dev_rows: 2), port_map.file_path: '(null)', port_map.file_content: '(null)'
-[ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:26 (dump_platform_pci_row) ] platform PCI row dump (0x5564dc344718)
+[ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:64 (dump_platform) ] Platform: 'VirtualBox' (0x55bd7556d708) (pci_rows: 2, dev_rows: 2), port_map.file_path: '(null)', port_map.file_content: '(null)'
+[ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:26 (dump_platform_pci_row) ] platform PCI row dump (0x55bd7556d718)
   pci_id_str:          '0000:00:08.0'
   pci_class_id_str:    '0x0200'
   pci_vendor_id_str:   '0x1af4'
@@ -294,7 +294,7 @@ sb_module_init /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dat
   kernel_driver_str:   'virtio_pci'
   user_driver_str:     'igb_uio'
   pci_bind_str:        '0'
-[ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:26 (dump_platform_pci_row) ] platform PCI row dump (0x5564dc344750)
+[ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:26 (dump_platform_pci_row) ] platform PCI row dump (0x55bd7556d750)
   pci_id_str:          '0000:00:09.0'
   pci_class_id_str:    '0x0200'
   pci_vendor_id_str:   '0x1af4'
@@ -302,10 +302,10 @@ sb_module_init /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dat
   kernel_driver_str:   'virtio_pci'
   user_driver_str:     'igb_uio'
   pci_bind_str:        '0'
-[ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:49 (dump_platform_dev_row) ] platform DEV row dump (0x5564dc344e20)
+[ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:49 (dump_platform_dev_row) ] platform DEV row dump (0x55bd7556de20)
   object_id_str:       '/example_l2/port2'
   yang_id_str:         'port2'
-[ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:49 (dump_platform_dev_row) ] platform DEV row dump (0x5564dc344e30)
+[ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:49 (dump_platform_dev_row) ] platform DEV row dump (0x55bd7556de30)
   object_id_str:       '/example_l2/port1'
   yang_id_str:         'port1'
 [ INFO - - (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sEAL: Detected CPU lcores: 4
@@ -345,9 +345,12 @@ dk-usage-example-0.6.2/build//sb_class_dpdk_eal_impl_class.c:131 (sb_class_dpdk_
 [ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:1723 (sb_class_hal_get_dpdk_port_id) ] strcmp(/example_l2/port2, /example_l2/port2)
 [ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:1744 (sb_class_hal_get_dpdk_port_id) ] after, object_id: '/example_l2/port2', port_id: '0', status: SB_STATUS_SUCCESS, found: 1
 [ DEBUG 10 /example_l2/port2 SB_STATUS_SUCCESS (success) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_netdev_dpdk_impl_class.c:5172 (sb_class_netdev_dpdk_object_configure) ] after hal_get_dpdk_port_id_by_object_id, port_id: [ ERROR /example_l2/api_confd <NULL> (error) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_task_api_confd_impl_class.c:1419 (sb_class_task_api_confd_api_subscr_add) ] api_subscr_add failed
-[ ERROR /example_l2/api_confd <NULL> (error) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_task_api_confd_impl_class.c:1419 (sb_class_task_api_confd_api_subscr_add) ] api_subscr_add failed
-[ ERROR /example_l2/port2 - (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_netdev_dpdk_impl_class.c:3021 (sb_class_netdev_dpdk_api_subscribe) ] object: '/example_l2/port2', api_subscr_add() failed (<NULL>)
+[ ERROR /example_l2/port2 <NULL> (error) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_netdev_dpdk_impl_class.c:2964 (sb_class_netdev_dpdk_api_subscribe) ] api_subscr_add() failed
 [ WARNING /example_l2/port2 <NULL> (error) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_netdev_dpdk_eth_impl_class.c:731 (sb_class_netdev_dpdk_eth_object_configure) ] api_subscribe failed
+[ ERROR /example_l2/api_confd <NULL> (error) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_task_api_confd_impl_class.c:1861 (sb_class_task_api_confd_api_dataprovider_add) ] api_dataprovider_add failed
+[ ERROR /example_l2/port2 <NULL> (error) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_netdev_dpdk_impl_class.c:5051 (sb_class_netdev_dpdk_api_dataproviders_add) ] api_dataprovider_add failed
+[ WARNING /example_l2/port2 <NULL> (error) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_netdev_dpdk_eth_impl_class.c:745 (sb_class_netdev_dpdk_eth_object_configure) ] api_dataproviders_add failed
+[ ERROR /example_l2/port2 - (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build/sb_class_netdev_dpdk_impl_class.h:415 (sb_netdev_dpdk_parse_pci_addr) ] cannot parse a PCI ID: ''
 0
 [ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:1711 (sb_class_hal_get_dpdk_port_id) ] before: object_id: '/example_l2/port2', cur_platform->dev_rows_count: '2'
 [ DEBUG 10 /example_l2/hal (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_hal_impl_class.c:1723 (sb_class_hal_get_dpdk_port_id) ] strcmp(/example_l2/port2, /example_l2/port2)
@@ -357,18 +360,21 @@ dk-usage-example-0.6.2/build//sb_class_dpdk_eal_impl_class.c:131 (sb_class_dpdk_
 [ DEBUG 10 /example_l2/api_confd (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_task_api_impl_class.h:1112 (_api_subscr_add) ] xpath: '/interfaces/interface{/example_l2/port2}/enabled'
 [ DEBUG 10 - (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_task_api_impl_class.h:1076 (_api_subscr_entry_alloc) ] a_obj->_subscr_free_entries_count: '0'
 [ DEBUG 10 /example_l2/api_confd (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_task_api_impl_class.h:1118 (_api_subscr_add) ] cannot allocate a subscr entry
-[ DEBUG 10 /example_l2/api_confd (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_task_api_confd_impl_class.c:1402 (sb_class_task_api_confd_api_subscr_add) ] xpath: '/interfaces/interface{/example_l2/port2}/description'
-[ DEBUG 10 /example_l2/api_confd (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_task_api_impl_class.h:1112 (_api_subscr_add) ] xpath: '/interfaces/interface{/example_l2/port2}/description'
-[ DEBUG 10 - (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_task_api_impl_class.h:1076 (_api_subscr_entry_alloc) ] a_obj->_subscr_free_entries_count: '0'
-[ DEBUG 10 /example_l2/api_confd (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_task_api_impl_class.h:1118 (_api_subscr_add) ] cannot allocate a subscr entry
 [ DEBUG 10 /example_l2/api_confd (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_task_api_confd_impl_class.c:1844 (sb_class_task_api_confd_api_dataprovider_add) ] xpath: '/interfaces/interface/statistics/in-octets'
 [ DEBUG 10 /example_l2/api_confd (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_task_api_impl_class.h:1316 (_api_dataprovider_add) ] xpath: '/interfaces/interface/statistics/in-octets'
 [ DEBUG 10 /example_l2/api_confd (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_task_api_impl_class.h:1281 (_api_dataprovider_entry_alloc) ] a_obj->_dataprovider_free_entries_count: '0'
-[ DEBUG 10 /example_l2/api_confd (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_task_api_i[ ERROR /example_l2/api_confd <NULL> (error) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_task_api_confd_impl_class.c:1861 (sb_class_task_api_confd_api_dataprovider_add) ] api_dataprovider_add failed
-[ ERROR /example_l2/port2 <NULL> (error) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_netdev_dpdk_impl_class.c:5051 (sb_class_netdev_dpdk_api_dataproviders_add) ] api_dataprovider_add failed
-[ WARNING /example_l2/port2 <NULL> (error) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_netdev_dpdk_eth_impl_class.c:745 (sb_class_netdev_dpdk_eth_object_configure) ] api_dataproviders_add failed
-[ ERROR /example_l2/port2 - (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build/sb_class_netdev_dpdk_impl_class.h:415 (sb_netdev_dpdk_parse_pci_addr) ] cannot parse a PCI ID: ''
-Device with port_id=0 already stopped
+[ DEBUG 10 /example_l2/api_confd (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_task_api_impl_class.h:1322 (_api_dataprovider_add) ] cannot allocate a dataprovider entry
+[ DEBUG 10 /example_l2/port2 <NULL> (error) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_netdev_dpdk_eth_impl_class.c:122 (init_eth_port) ] after sb_netdev_dpdk_parse_pci_addr(), PCI_ADDR (0000:00:00.0):
+  domain:    0x0
+  bus:       0x0
+  devid:     0x0
+  function:  0x0
+
+  vendor:    0x0000
+  device:    0x0000
+[ DEBUG 10 /example_l2/port2 (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_netdev_dpdk_impl_class.c:546 (sb_class_netdev_dpdk_set_enabled) ] dev '/example_l2/port2' set enabled: '1' port id: '0'
+[ DEBUG 10 /example_l2/port2 (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_netdev_dpdk_impl_class.c:247 (port_configure) ] port_id: 0, obj->link_autoneg: '1'
+[ DEBUG 10 /example_l2/port2 (-) ] [ /home/newDevice with port_id=0 already stopped
 Device with port_id=0 already started
 [ ERROR /example_l2/port2 - (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_netdev_dpdk_impl_class.c:572 (sb_class_netdev_dpdk_set_enabled) ] An error occured while setting interface 0 link up: No such file or directory
 [ ERROR /example_l2/port2 - (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_netdev_dpdk_eth_impl_class.c:196 (init_eth_port) ] set_enabled(1) failed
@@ -386,18 +392,7 @@ Device with port_id=0 already started
 [ ERROR - - (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_impl_object.c:423 (_sb_object_configure_with_arg_line) ] _sb_object_configure_with_argc_argv failed
 [ ERROR - - (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//init.c:50 (do_init) ] cannot configure an object: /example_l2 (sb_class.example_l2)
 [ ERROR - - (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//main.c:319 (main) ] do_init() failed (error)
-mpl_class.h:1322 (_api_dataprovider_add) ] cannot allocate a dataprovider entry
-[ DEBUG 10 /example_l2/port2 <NULL> (error) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_netdev_dpdk_eth_impl_class.c:122 (init_eth_port) ] after sb_netdev_dpdk_parse_pci_addr(), PCI_ADDR (0000:00:00.0):
-  domain:    0x0
-  bus:       0x0
-  devid:     0x0
-  function:  0x0
-
-  vendor:    0x0000
-  device:    0x0000
-[ DEBUG 10 /example_l2/port2 (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_netdev_dpdk_impl_class.c:546 (sb_class_netdev_dpdk_set_enabled) ] dev '/example_l2/port2' set enabled: '1' port id: '0'
-[ DEBUG 10 /example_l2/port2 (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_netdev_dpdk_impl_class.c:247 (port_configure) ] port_id: 0, obj->link_autoneg: '1'
-[ DEBUG 10 /example_l2/port2 (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_netdev_dpdk_impl_class.c:305 (port_configure) ] port_id: 0, set ETH_LINK_SPEED_AUTONEG
+teno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_netdev_dpdk_impl_class.c:305 (port_configure) ] port_id: 0, set ETH_LINK_SPEED_AUTONEG
 [ DEBUG 10 /example_l2/port2 (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_netdev_dpdk_impl_class.c:322 (port_configure) ] port_id: 0, mtu: 9000
 [ DEBUG 10 /example_l2/port2 (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_netdev_dpdk_impl_class.c:376 (port_configure) ] port: 0, after rte_eth_dev_adjust_nb_rx_tx_desc (retval: 0)
 dev nb_rxd: 1024
@@ -437,12 +432,7 @@ obj nb_txd: 1024
 [ DEBUG 10 (null) (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_netdev_dpdk_impl_class.c:585 (sb_class_netdev_dpdk_set_enabled) ] An error occured while seting interface 0 link down: No such file or directory
 [ INFO - - (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//main.c:362 (main) ] Delete the lock file: '/var/run/lock/example_l2.lock'
 [ INFO - - (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//main.c:375 (main) ] finished
-top
-[ DEBUG 10 - (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_lcore_impl_class.c:316 (sb_lcores_stop) ]   object: '/example_l2/lcore1' (SB_CLASS_ID_LCORE_SCHEDULER_ROUNDROBIN) call _sb_lcore_stop
-[ DEBUG 10 - (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_lcore_impl_class.c:316 (sb_lcores_stop) ]   object: '/example_l2/lcore0' (SB_CLASS_ID_LCORE_SCHEDULER_ROUNDROBIN) call _sb_lcore_stop
-[ DEBUG 10 /example_l2/lcore0 (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_lcore_impl_class.c:506 (sb_class_lcore_lcore_stop) ] lcore_stop
-[ DEBUG 20 /example_l2/lcore0 (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_lcore_impl_class.h:106 (sb_lcore_set_state) ] set state: 'SB_LCORE_STATE_REQ_EXIT'
-[ DEBUG 10 /example_l2/lcore0 (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_lcore_impl_class.c:510 (sb_class_lcore_lcore_stop) ] before call rte_eal_wait_lcore(0)
+re0 (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_lcore_impl_class.c:510 (sb_class_lcore_lcore_stop) ] before call rte_eal_wait_lcore(0)
 [ DEBUG 10 /example_l2/lcore0 (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_lcore_impl_class.c:516 (sb_class_lcore_lcore_stop) ] after call rte_eal_wait_lcore(0)
 [ INFO - - (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_example_l2.c:1151 (object_free) ] ***** objects free *****
 [ DEBUG 10 (null) (-) ] [ /home/newteno/prj.promwad.Teno-SW-Engineering-dpdk/sdk/0.7.10/dataplane-sdk-usage-example-0.6.2/build//sb_class_netdev_dpdk_impl_class.c:546 (sb_class_netdev_dpdk_set_enabled) ] dev '(null)' set enabled: '0' port id: '0'
