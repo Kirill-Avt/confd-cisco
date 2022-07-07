@@ -1,0 +1,40 @@
+<interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+		<interface>
+			<name>0000:00:08.0</name>
+			<type>ianaift:ethernetCsmacd</type>
+			<enabled>true</enabled>
+			<sb_if xmlns="http://spacebridge.com/yang/spacebridge-interfaces">
+				<l2-mtu>1500</l2-mtu>
+				<mode>trunk</mode>
+				<vlan_filter>0</vlan_filter>
+			</sb_if>
+		</interface>
+		<interface>
+			<name>0000:00:09.0</name>
+			<type>ianaift:ethernetCsmacd</type>
+			<enabled>true</enabled>
+			<sb_if xmlns="http://spacebridge.com/yang/spacebridge-interfaces">
+				<l2-mtu>1500</l2-mtu>
+				<mode>access</mode>
+			</sb_if>
+		</interface>
+		<interface>
+			<name>net_tap0</name>
+			<type>ianaift:ethernetCsmacd</type>
+			<enabled>true</enabled>
+			<sb_if xmlns="http://spacebridge.com/yang/spacebridge-interfaces">
+				<l2-mtu>1500</l2-mtu>
+				<mode>access</mode>
+			</sb_if>
+		</interface>
+		<interface>
+			<name>net_tap1</name>
+			<type>ianaift:ethernetCsmacd</type>
+			<enabled>true</enabled>
+			<sb_if xmlns="http://spacebridge.com/yang/spacebridge-interfaces">
+				<l2-mtu>1500</l2-mtu>
+				<mode>access</mode>
+			</sb_if>
+		</interface>
+</interfaces> 
+
